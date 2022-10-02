@@ -9,10 +9,15 @@
     <script src='main.js'></script>
 </head>
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
     h1{
-        color: red;
+        color: #00C495;
         text-align: center;
-        font-family: Bahnschrift;
+        font-family: 'Dancing Script';
+        font-size: 50px;
     }
     
     body{
@@ -29,38 +34,66 @@
     p{
         text-align: center;
         font-family: Bahnschrift;
-        color: white;
     }
 
     a{
         text-decoration: none;
-        color: yellow;
+        color: #AEFF00;
     }
 
     a:link:active, a:visited:active {
-        color: yellow;
+        color: #AEFF00;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 45%;
+        border-radius: 5px;
+        background-color: #C4002D;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .container {
+        padding: 2px 16px;
     }
     
 </style>
 <body>
-    <h1><u>Profile</u></h1><br>
-    <img src="propic.jpg" style="width:200px;height:200px;" class="center"><br>
-    <p id="span">Name: Aziz Farhan Khan Mohammed Mazheruddin<br>
-        DOB: 22nd April 1998<br>Address: Peoria, Illinois         
-    </p>
-
-    <p>
-        <b>Qualification</b><br><br>
-        Masters: Computer Information Systems, Bradley University<br>
-        Bachelors: Computer Science & Engineering, Osmania University<br>
-        High School: International Indian School, Al-Jubail<br>
-    </p>
-
-    <p>
-        <b>Contact</b><br><br>
-        Email: amohammedmazheru@mail.bradley.edu<br>
-        LinkedIn: <a href="https://www.linkedin.com/in/azizfarhankhan">Farhan Khan</a>
-
-    </p>
+    
+    <div class="card">
+        <!-- <img src="propic.jpg" alt="Avatar" style="width:100%"> -->
+        <div class="container">
+            <h1>Profile</h1><br>
+            <img src="propic.jpg" style="width:200px;height:200px;" class="center"><br>
+            <p id="span">Name: Aziz Farhan Khan Mohammed Mazheruddin<br>
+                DOB: 22nd April 1998<br>Address: Peoria, Illinois         
+            </p>
+        
+            <p>
+                <b>Qualification</b><br><br>
+                Masters: Computer Information Systems, Bradley University<br>
+                Bachelors: Computer Science & Engineering, Osmania University<br>
+                High School: International Indian School, Al-Jubail<br>
+            </p>
+        
+            <p>
+                <b>Contact</b><br><br>
+                Email: amohammedmazheru@mail.bradley.edu<br>
+                LinkedIn: <a href="https://www.linkedin.com/in/azizfarhankhan">Farhan Khan</a>
+        
+            </p> <br><br>
+        </div>
+      </div>
 </body>
 </html>
